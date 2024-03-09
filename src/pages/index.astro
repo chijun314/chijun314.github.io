@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Sample from '../components/react/Sample';
+import { HelloComponent } from '../components/angular/hello.component';
+import { SampleComponent } from '../components/angular/sample.component';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -60,6 +63,9 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<SampleComponent />
+		<Sample />
+		<HelloComponent client:visible />
 	</main>
 </Layout>
 
